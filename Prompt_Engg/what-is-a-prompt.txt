@@ -19,7 +19,53 @@ But what order matters is like:
     3. <output format>
 This matters as the flow of information processing matters.
 
+Techniques
+1. Instructions in promptss
+2. Roles in Prompt
+    - a technique that involves assigning a role or persona to an AI model
+3. Zero/One-shot to Few-shot (examples in prompt)
+    - Also called In-Context Learning
+    - shots refer to the no of examples included in the prompt
 
+In-context learning vs fine-tuning a model
+- context learning and fine-tuning solve different problems.
+
+    - In-context learning means you give the model examples or instructions in the prompt at inference time. 
+        The model uses them immediately without changing its weights.
+    - Fine-tuning means you train the model on a dataset so its weights are updated and it behaves differently more permanently.
+
+- One more distinction:
+    > Few-shot is better for flexibility and quick iteration.
+    > Fine-tuning is better for specialization and scale.
+
+Prompt Priming
+Priming chatbots (also known as prompt priming or inception prompts1) is a powerful technique used to guide a chatbot's behavior in a desired direction. 
+By framing or structuring the initial prompt, you can influence how the AI interprets user input and tailor its responses to fit specific objectives.
+
+Chatbots vs Large language models(LLMs)
+- Chatbots = llm + memory + human-like conversations
+- llm = engines + no-memory(on their own)
+
+llm limitations
+1. hallucinations
+2. limited reasoning skills
+3. limited long term memory
+4. limited knowledge (till cutoff training date)
+5. bias
+6. prompt hacking (handled by using filters)
+
+what does gen ai create?
+- text gen
+- image gen
+- audio gen
+- synthetic data gen
+- multimodal models
+
+Intermediate section:
+A prompting technique may incorporate conditional or branching logic, parallelism, or other architectural considerations spanning multiple prompt.
+
+chain-of-thought(cot) prompting
+> 
 
 
 
