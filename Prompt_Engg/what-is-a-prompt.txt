@@ -1,0 +1,26 @@
+Prompt
+It is the input or instruction given to an AI model to generate a response.
+
+Prompt Engg
+it is the process of crafting and refining prompts to improve the peerformance of ai models.
+
+Key Parts of Prompt
+1. Directive
+It is a concise instruction to AI model to perform a task.
+2. Examples
+3. Role (persona)
+4. output formatting
+5. additional information (context/knowledge base)
+
+There is no order in above parts.
+But what order matters is like:
+    1. <context+examples+knowledge base>
+    2. <directive>
+    3. <output format>
+This matters as the flow of information processing matters.
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+Links:
+1. HackaPrompt: https://www.hackaprompt.com/track/tutorial_competition
+2. LearnPrompting: https://learnprompting.org/docs/introduction
+3. Youtube Link:
+    - https://www.youtube.com/watch?v=_BRhRh7mOX0
