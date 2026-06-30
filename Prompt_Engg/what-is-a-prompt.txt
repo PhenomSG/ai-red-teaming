@@ -65,8 +65,92 @@ Intermediate section:
 A prompting technique may incorporate conditional or branching logic, parallelism, or other architectural considerations spanning multiple prompt.
 
 chain-of-thought(cot) prompting
-> 
+> a technique that enhances the reasoning capabilities of large language models (LLMs) by incorporating logical steps—or a “chain of thought”—within the prompt 
+> encourages multi step reasoning,achieves efficiency w/o finetuning
+> according to CoT authors1, CoT only yields performance gains when used with models of ∼100B parameters.
+
+zero-shot chain-of-thought prompting
+> extension of cot
+> just append at last: lets think step by step
+
+Self-consistency
+> It is an approach that simply asks a model the same prompt multiple times and takes the majority result as the final answer.
+> follow up to cot prompting
+> Wang et al. discuss a more complex method for selecting the final answer, which deals with the Large Language Model's (LLM) generated probabilities for each Chain-of-Thought.
+
+Generated Knowledge
+> ask llm to generate potentially useful info about a given promt before generating a final response.
+
+least-to-most prompting
+Definition: Least-to-Most (LtM) prompting breaks down problems into simpler subproblems and solves them sequentially.
+Comparison with Chain-of-Thought: Unlike Chain-of-Thought prompting, where each step is independent, LtM uses the output of previous subproblems as input for the next.
+
+meta prompting
+> asking ai to give you a prompt
+
+dealing with long-form content (as models have limited context length)
+1. preprocessing the text (removing unncessary text)
+2. chunking and iterative approach
+3. code libraries
+    - llama index (perform vector search to find which part is relevant) 
+    - langchain (perform recursive summaries)
+
+basic llm settings
+1. temperature
+    > regulates the unpredictability of a language model's output.
+    > higher temp: more creative
+    > low temp: more predictable
+
+2. top-p
+    > helps manage the randomness of their output
+    > establishing a probability threshold and then selecting tokens whose combined likelihood surpasses this limit.
+
+3. maximum length
+    > total # of tokens the AI is allowed to generate
+
+4. stop sequences
+    > tell the output model when to cease output generation.
+    like if stop seq: thankyou, so llm will generate uptil thankyou
+
+5. frequency penalty
+    > discourages repetition in the generated text
+
+6. presence penalty
+    > penalizes tokens based on if they have occured or not, instead of propotionality
+
+NOTE: even when temp and top-p are set to zero,AI may not give same exact output every time.
+this is due to randomness in GPU calculations (floating point errors)
+
+Advanced section:
+1. Zero-shot prompting
+    a) Emotion Prompting1: 
+        Leverages emotional language to improve LLM accuracy and response quality by tapping into emotion-rich training data.
+    b) Re-reading (RE2)2: 
+        Enhances reasoning by asking the model to re-read the prompt, ensuring important details aren't missed.
+    c) Rephrase and Respond (RaR)3: 
+        Asks the model to rephrase the prompt before answering, reducing ambiguity and improving clarity.
+    d) Role Prompting4: 
+        Assigns roles to the LLM, creating more context-specific, relevant responses for various tasks.
+    e) System 2 Attention (S2A)5: 
+        Filters out irrelevant information by having the model refine the prompt, leading to more accurate outputs.
+    f) SimToM6: 
+        enhances LLMs' ability to understand and predict human thoughts and actions.
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
