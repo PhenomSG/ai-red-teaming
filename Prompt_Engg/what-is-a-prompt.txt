@@ -123,20 +123,29 @@ this is due to randomness in GPU calculations (floating point errors)
 
 Advanced section:
 1. Zero-shot prompting
-    a) Emotion Prompting1: 
+    a) Emotion Prompting: 
         Leverages emotional language to improve LLM accuracy and response quality by tapping into emotion-rich training data.
-    b) Re-reading (RE2)2: 
+    b) Re-reading (RE2): 
         Enhances reasoning by asking the model to re-read the prompt, ensuring important details aren't missed.
-    c) Rephrase and Respond (RaR)3: 
+    c) Rephrase and Respond (RaR): 
         Asks the model to rephrase the prompt before answering, reducing ambiguity and improving clarity.
-    d) Role Prompting4: 
+    d) Role Prompting: 
         Assigns roles to the LLM, creating more context-specific, relevant responses for various tasks.
-    e) System 2 Attention (S2A)5: 
+    e) System 2 Attention (S2A): 
         Filters out irrelevant information by having the model refine the prompt, leading to more accurate outputs.
-    f) SimToM6: 
+    f) SimToM: 
         enhances LLMs' ability to understand and predict human thoughts and actions.
 
-
+    SimToM:
+    > simulation theory
+    > SimToM outperforms traditional prompting techniques like Zero-Shot and Chain-of-Thought in tasks requiring Theory of Mind (ToM).
+    q: what is simulation theory and theory of mind?
+    A: The Simulation Theory suggests that what people perceive as reality is actually a simulated world, possibly a computer simulation, where humans themselves are constructs.
+    How can you suggest the thoughts, desires, and intentions to others, predict or explain their actions just by observing their behavior? This is a human ability called Theory of Mind (ToM). 
+    > never tested on models<7B parameters
+    > it is a 2 stage prompting technique
+        Stage 1, Perspective-Taking: SimToM filters context based on what the character in question knows
+        Stage 2, Question-Answering: SimToM answers a question about this character's mental state
 
 
 
