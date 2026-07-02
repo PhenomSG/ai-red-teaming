@@ -151,7 +151,30 @@ Advanced section:
         - revisit after some time
         
 
+2. Few shot prompting
+    a) self-ask
+        llm ask yourself step by step by breaking the problem and then Respond
+    b) self-generated in-context learning (sg-icl)
+        ask llm about a topic and then ask questions + take prev context knowledge to answer better
+    c) chain-of-dictionary (cod)
+        add chained dictionary/knowledge like:
+            sleep in english means nidra in hindi
+        adding stuff like this
+    d) cue-cot (Chain-of-Thought Prompting for Responding to In-depth Dialogue Questions with LLMs)
+    e) chain-of-knowledge
+        add knowledge as triplets
+            format (subject, relation, object)
+    f) k-nearest neighbors (knn)
+    g) vote-k
+    h) prompt mining
 
+3. Through generation
+
+4. Ensembling
+
+5. self-critism
+
+6. decomposition
 
 
 
