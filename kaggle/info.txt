@@ -1,0 +1,9 @@
+url1: https://www.kaggle.com/code/gdataranger/jed-attack-dgx-spark-gb10#3.-GPT-OSS-20B-on-DGX-—-Challenges-and-Investigation-(Bug-8)
+url2: https://mbhatt1.github.io/competitionscratch/GETTING_STARTED.html
+url3: https://www.kaggle.com/code/georgymamarin/red-team-starter-what-fires-and-what-it-s-worth/notebook
+
+
+
+
+
+

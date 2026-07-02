@@ -1,0 +1,16 @@
+Prompt hacking
+prompt hacking involves providing input to a language model that tricks it into ignoring or bypassing its built-in safeguards
+
+3 types
+1. prompt injection
+2. prompt leaking
+3. jailbreaking
+
+
+
+
+
+
+
+
+
