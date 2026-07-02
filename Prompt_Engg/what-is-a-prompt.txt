@@ -147,7 +147,9 @@ Advanced section:
         Stage 1, Perspective-Taking: SimToM filters context based on what the character in question knows
         Stage 2, Question-Answering: SimToM answers a question about this character's mental state
 
-
+    System 2 Attention ** maked as expert
+        - revisit after some time
+        
 
 
 
