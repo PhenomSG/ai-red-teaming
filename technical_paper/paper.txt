@@ -1,0 +1,17 @@
+Iterative Prompt Mutation for Multi-Step AI Agent Red Teaming
+Author: Sahaj Gupta
+GitHub Repository:
+https://github.com/PhenomSG/ai-red-teaming
+Introduction
+Large Language Model (LLM) agents are increasingly capable of planning over multiple steps, interacting with external tools, and autonomously executing tasks. While these capabilities make agents more useful, they also introduce new attack surfaces where adversarial instructions can manipulate reasoning, tool selection, and execution flow. Existing prompt-level jailbreaks often overlook these long-horizon interactions, motivating the need for systematic evaluation of autonomous agents under realistic adversarial settings.
+This work investigates iterative prompt mutation as a strategy for discovering reproducible multi-step failures in tool-using AI agents.
+Methodology
+Instead of relying on handcrafted jailbreak prompts, I iteratively refine prompts based on previous agent behavior, exploring diverse adversarial trajectories while preserving deterministic replayability. My current implementation focuses on prompt mutation strategies that influence reasoning, tool invocation, and execution order across multiple interaction steps. The objective is not only to maximize attack success, but also to understand why particular attack sequences consistently succeed.
+A key challenge is balancing exploration of new attack strategies with exploitation of previously successful prompt patterns, enabling systematic rather than random search through the adversarial space.
+Current Observations
+Through ongoing experimentation, I have observed that agent behavior is influenced not only by prompt content but also by tool ordering, intermediate reasoning states, and accumulated conversational context. Certain adversarial interaction patterns remain reproducible across repeated evaluations, suggesting that agent safety cannot be assessed through isolated prompts alone.
+
+Future Work
+This project has strengthened my interest in AI safety by shifting my focus from generating successful attacks to developing better evaluation methodologies for autonomous AI agents. Going forward, I aim to investigate richer behavioral metrics, automated evaluation pipelines, and comprehensive benchmarks that assess agent robustness across long-horizon reasoning and tool use. Ultimately, I hope to contribute toward building trustworthy AI systems whose safety can be evaluated rigorously before deployment.
+
+
